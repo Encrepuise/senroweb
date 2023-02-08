@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Detect Language -->
+<script>
+
+  var language = navigator.language || navigator.browserLanguage;
+  
+  // if (language.indexOf('tr') > -1) {
+    document.location.href = 'https://senroweb.com/tr';
+    }
+
+</script>
+<!-- Detect Language -->
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Senroweb</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Our goal is to utilize and expand technology in a manner that empowers individuals and organizations to achieve their maximum capabilities in mobile and web software." name="description">
+  <meta content="web development, mobile development, seo services, IT consultant" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/ico.ico" rel="icon">
@@ -25,7 +37,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css?v=1.2" rel="stylesheet">
+  <link href="assets/css/style.css?v=1.4" rel="stylesheet">
 
 </head>
 
@@ -36,25 +48,17 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <!-- <h1><a href="index.html">Vesperr</a></h1> -->
-
-        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="index.html"><img src="assets/img/logo.png" alt="Senroweb" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-
           <li><a class="nav-link scrollto" href="#technologies">Technologies</a></li>
-
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>         
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -75,7 +79,7 @@
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="Discover Our Services">
         </div>
       </div>
     </div>
@@ -98,7 +102,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class='bx bx-code-block'></i></div>
-              <h4 class="title"><a href="">Web Development</a></h4>
+              <h4 class="title"><a>Web Development</a></h4>
               <p class="description">Prioritizing the client's needs, putting the customer at the center, designing website services that yield noticeable business outcomes.</p>
             </div>
           </div>
@@ -106,7 +110,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class='bx bx-devices'></i></div>
-              <h4 class="title"><a href="">Mobile Development</a></h4>
+              <h4 class="title"><a>Mobile Development</a></h4>
               <p class="description">Our mobile development services specialize in designing and building custom native and cross-platform applications to enhance your customers' mobile experience and reach.</p>
             </div>
           </div>
@@ -114,7 +118,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class='bx bx-line-chart'></i></div>
-              <h4 class="title"><a href="">SEO</a></h4>
+              <h4 class="title"><a>SEO</a></h4>
               <p class="description">Search Engine Optimization, optimizes your website to improve its visibility and ranking on Google, driving more traffic to your business.</p>
             </div>
           </div>
@@ -122,7 +126,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
               <div class="icon"><i class='bx bx-analyse'></i></div>
-              <h4 class="title"><a href="">Strategy & Assistance</a></h4>
+              <h4 class="title"><a>Strategy & Assistance</a></h4>
               <p class="description">Your idea is transformed into a plan that details how to bring it to reality.</p>
             </div>
           </div>
@@ -146,7 +150,7 @@
         <!-- Start What Do We Offer Item-->
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-6 imagediv">
-            <img src="assets/img/1.png" class="imagesec" alt="">
+            <img src="assets/img/1.png" class="imagesec" alt="We are part of your team">
           </div>
           <div style="text-align:left;margin-top:auto;margin-bottom:auto" class="col-lg-6">
             <h1>
@@ -165,14 +169,14 @@
             <p>Ranking high in search engines is crucial for any business; and with our expertise in SEO, we'll ensure your website not only reaches the top, but stays there.</p>
           </div>
           <div class="col-lg-6">
-            <img src="assets/img/2.png" class="imagesec" alt="">
+            <img src="assets/img/2.png" class="imagesec" alt="Stay in top with SEO experties">
           </div>
         </div><!-- End What Do We Offer Item-->
         
         <!-- Start What Do We Offer Item-->
         <div class="row faq-item faq-item-last d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-6">
-            <img src="assets/img/3.png" class="imagesec" style="margin:auto;" alt="">
+            <img src="assets/img/3.png" class="imagesec" style="margin:auto;" alt="Step into digital world">
           </div>
           <div style="text-align:left;margin-top:auto;margin-bottom:auto" class="col-lg-6">
             <h1>
@@ -199,34 +203,34 @@
           <div class="slider">
             <div class="slide-track">
               <div class="slide">
-                <img src="assets/img/icons/3.png" height="100" alt="" loading="lazy" />
+                <img src="assets/img/icons/3.png" height="100" alt="HTML" loading="lazy" />
               </div>
               <div class="slide">
-                <img src="assets/img/icons/4.png" height="100" alt="" loading="lazy" />
+                <img src="assets/img/icons/4.png" height="100" alt="CSS" loading="lazy" />
               </div>
               <div class="slide">
-                <img src="assets/img/icons/5.png" height="100" alt="" loading="lazy" />
+                <img src="assets/img/icons/5.png" height="100" alt="JavaScript" loading="lazy" />
               </div>
               <div class="slide">
-                <img src="assets/img/icons/2.png" height="100" alt="" loading="lazy" />
+                <img src="assets/img/icons/2.png" height="100" alt="Flutter" loading="lazy" />
               </div>
               <div class="slide">
-                <img src="assets/img/icons/6.png" height="100" alt="" loading="lazy" />
+                <img src="assets/img/icons/6.png" height="100" alt="mongoDB" loading="lazy" />
               </div>
               <div class="slide">
-                <img src="assets/img/icons/7.png" height="100" alt="" loading="lazy" />
+                <img src="assets/img/icons/7.png" height="100" alt="Vue.js" loading="lazy" />
               </div>
               <div class="slide">
-                <img src="assets/img/icons/8.png" height="100" alt="" loading="lazy" />
+                <img src="assets/img/icons/8.png" height="100" alt="node.js" loading="lazy" />
               </div>
               <div class="slide">
-                <img src="assets/img/icons/9.png" height="100" alt="" loading="lazy" />
+                <img src="assets/img/icons/9.png" height="100" alt="React" loading="lazy" />
               </div>
               <div class="slide">
-                <img src="assets/img/icons/10.png" height="100" alt="" loading="lazy" />
+                <img src="assets/img/icons/10.png" height="100" alt="Rust" loading="lazy" />
               </div>
               <div class="slide">
-                <img src="assets/img/icons/11.png" height="100" alt="" loading="lazy" />
+                <img src="assets/img/icons/11.png" height="100" alt="Python" loading="lazy" />
               </div>
             </div>
           </div>
@@ -243,59 +247,50 @@
 
         <div class="section-title">
           <h2>Pricing</h2>
-          <p>Sit sint consectetur velit nemo qui impedit suscipit alias ea</p>
+          <p>Please contact us for more comprehensive pricing</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-4 col-md-6">
-            <div class="box" data-aos="zoom-in-right" data-aos-delay="200">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
+            <div class="box recommended" data-aos="zoom-in-right" data-aos-delay="200">
+              <h3>Website Development</h3>
+              <h4><sup>$</sup>450<span></span></h4>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
+                <li>Up To 10 Page Design</li>
+                <li>Creative Design Based On Your Ideas</li>
+                <li>Mobile Compability</li>
+                <li>Free SSL / Security</li>
+                <li>One Time Payment</li>
               </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
             <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
+              <h3>SEO Assistance</h3>
+              <h4><sup>$</sup>100<span> / month</span></h4>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
+                <li>Keyword Research</li>
+                <li>Setting The Goals</li>
+                <li>Sector and Competitor Analysis</li>
+                <li>Analytics and Reporting</li>
+                <li>Google AdWords, Facebook and Others</li>
               </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in-left" data-aos-delay="200">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
+            <div class="box recommended" data-aos="zoom-in-left" data-aos-delay="200">
+              <h3>Mobile Development</h3>
+              <h4>Contact For Price</h4>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
+                <li>Custom iOS and Android Apps</li>
+                <li>UI/UX design</li>
+                <li>Consulting and Prototyping</li>
+                <li>Turn-key Project</li>
+                <li>Maintenance and Ongoing Support</li>
               </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
             </div>
           </div>
 
@@ -325,8 +320,7 @@
               <h3>Senroweb</h3>
               <p>Our goal is to utilize and expand technology in a manner that empowers individuals and organizations to achieve their maximum capabilities in mobile and web software.</p>
               <div class="social-links">
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.linkedin.com/company/senroweb" class="linkedin"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -386,18 +380,10 @@
   <footer id="footer">
     <div class="container">
       <div class="row d-flex align-items-center">
-        <div class="col-lg-6 text-lg-left text-center">
+        <div class="col-lg-12 text-center">
           <div class="copyright">
             &copy; Copyright <strong>Senroweb</strong>. All Rights Reserved
           </div>
-        </div>
-        <div class="col-lg-6">
-          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            <a href="#intro" class="scrollto">Home</a>
-            <a href="#about" class="scrollto">About</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-          </nav>
         </div>
       </div>
     </div>
