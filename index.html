@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Detect Language -->
-<script>
+<!-- Detect Language
 
-  var language = navigator.language || navigator.browserLanguage;
+
+var language = navigator.language || navigator.browserLanguage;
   
-  // if (language.indexOf('tr') > -1) {
-    document.location.href = 'https://senroweb.com/tr';
-    }
+if (language.indexOf('tr') > -1) {
+document.location.href = 'https://senroweb.com/tr';
+ }
 
-</script>
-<!-- Detect Language -->
+
+Detect Language -->
 
 <head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4EM0HYDG6X"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'G-4EM0HYDG6X');
+  </script>
+  
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Senroweb</title>
   <meta content="Our goal is to utilize and expand technology in a manner that empowers individuals and organizations to achieve their maximum capabilities in mobile and web software." name="description">
-  <meta content="web development, mobile development, seo services, IT consultant" name="keywords">
+  <meta content="web development, mobile development, seo services, IT consultant, hire developer, hire mobile app developer, custom app developer, software company, hire seo, find developer" name="keywords">
+  <link rel="canonical" href="https://senroweb.com/" />
 
   <!-- Favicons -->
   <link href="assets/img/ico.ico" rel="icon">
@@ -39,9 +51,20 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css?v=1.4" rel="stylesheet">
 
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TNMBSX4');</script>
+
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNMBSX4"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
@@ -347,7 +370,7 @@
           </div>
 
           <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form onsubmit="sendEmail(); return false;" class="php-email-form">
               <div class="form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
               </div>
@@ -355,15 +378,15 @@
                 <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone Number" required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div id="error-message" class="error-message">z</div>
+                <div id="sent" class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
@@ -399,10 +422,55 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+ <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Contact Form Script -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+      Email.send({
+        SecureToken: "816e3708-cffe-40ab-9b9d-d25438a86453",
+        To : 'a.kopuz@senroweb.com',
+        From : "alperkopuz@outlook.com",
+        Subject : "Website Contact Form",
+        Body : "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Phone No: " + document.getElementById("phone").value
+            + "<br> Message: " + document.getElementById("message").value
+    }).then(
+      message =>{
+      console.log(message);
+      if (message == 'OK') {document.getElementById('sent').style.display = 'block';}
+      else {document.getElementById('error-message').style.display = 'block';
+      document.getElementById('error-message').innerHTML = message;}
+      }
+    );
+    }
+  </script>
+
+  <!-- Firebase -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+  
+    const firebaseConfig = {  
+      apiKey: "AIzaSyChqscY1bA6pkm6fTek4lipM_11b0BC5KI", 
+      authDomain: "senroweb.firebaseapp.com",  
+      projectId: "senroweb", 
+      storageBucket: "senroweb.appspot.com", 
+      messagingSenderId: "73773054161", 
+      appId: "1:73773054161:web:f1c2e04df6c4abac696df0",  
+      measurementId: "G-4EM0HYDG6X"  
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  
+  </script>
+
 
 </body>
 
