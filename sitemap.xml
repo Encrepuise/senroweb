@@ -9,12 +9,30 @@
 <url>
   <loc>https://senroweb.com/</loc>
   <lastmod>2023-02-09T00:23:04+00:00</lastmod>
-  <priority>1.00</priority>
+  <xhtml:link
+               rel="alternate"
+               hreflang="tr"
+               href="https://senroweb.com/tr.html"/>
+  <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://senroweb.com/en.html"/>
 </url>
 <url>
-  <loc>https://senroweb.com/index.html</loc>
+  <loc>https://senroweb.com/tr.html</loc>
   <lastmod>2023-02-09T00:23:04+00:00</lastmod>
-  <priority>0.80</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://senroweb.com/en.html"/>
+</url>
+<url>
+  <loc>https://senroweb.com/en.html</loc>
+  <lastmod>2023-02-09T00:23:04+00:00</lastmod>
+    <xhtml:link
+               rel="alternate"
+               hreflang="tr"
+               href="https://senroweb.com/tr.html"/>
 </url>
 
 
