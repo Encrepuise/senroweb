@@ -3,6 +3,74 @@
 
 <head>
 
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://senroweb.com",
+      "logo": "https://senroweb.com/assets/img/logo.png"
+    }
+
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Course",
+            "url":"https://senroweb.com",
+            "name": "Website Development & Design",
+            "description": "Prioritizing the client's needs, putting the customer at the center, designing website services that yield noticeable business outcomes.",
+            "provider": {
+              "@type": "Provider",
+              "name": "Senroweb",
+              "sameAs": "https://senroweb.com"
+           }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "Course",
+                "url":"https://senroweb.com",
+                "name": "Mobile App & Software Development",
+                "description": "Our mobile development services specialize in designing and building custom native and cross-platform applications to enhance your customers' mobile experience and reach.",
+                "provider": {
+                  "@type": "Provider",
+                  "name": "Senroweb",
+                  "sameAs": "https://senroweb.com"
+               }
+              }
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "item": {
+                    "@type": "Course",
+                    "url":"https://senroweb.com",
+                    "name": "SEO - Strategy & Assistance",
+                    "description": "Search Engine Optimization, optimizes your website to improve its visibility and ranking on Google, driving more traffic to your business.",
+                    "provider": {
+                      "@type": "Provider",
+                      "name": "Senroweb",
+                      "sameAs": "https://senroweb.com"
+                   }
+                  }
+                }
+
+    </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4EM0HYDG6X"></script>
   <script>
@@ -18,10 +86,11 @@
 
   <title>Senroweb</title>
   <meta content="Our goal is to utilize and expand technology in a manner that empowers individuals and organizations to achieve their maximum capabilities in mobile and web software." name="description">
-  <meta content="web development, mobile development, seo services, IT consultant, hire developer, hire mobile app developer, custom app developer, software company, hire seo, find developer" name="keywords">
+  <meta content="senroweb, web development, mobile development, seo services, IT consultant, hire developer, hire mobile app developer, custom app developer, software company, hire seo, find developer" name="keywords">
   <link rel="canonical" href="https://senroweb.com/" />
 
   <meta property="og:title" content="Senroweb - Your Technology Partner" />
+  <meta property="og:site_name" content="Senroweb" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://senroweb.com" />
   <meta property="og:image" content="https://senroweb.com/assets/img/bigimageog.jpg" />
@@ -76,7 +145,7 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <a href="index.html"><img src="assets/img/logo.png" alt="Senroweb" class="img-fluid"></a>
+        <a href="/index"><img src="assets/img/logo.png" alt="Senroweb" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -89,8 +158,8 @@
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li class="dropdown"><a><span><img style="height:20px;" src="assets/img/lang.png"> Language </span><i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a style="justify-content:start;" onClick="location.href='tr.html'" href="https://senroweb.com/tr.html"><img style="height:15px;margin-right:5px;" src="assets/img/tr.png">Turkish</a></li>
-              <li><a style="justify-content:start;" onClick="location.href='en.html'" href="https://senroweb.com/en.html"><img style="height:15px;margin-right:5px;" src="assets/img/us.png">English</a></li>
+              <li><a style="justify-content:start;" onClick="location.href='/tr'" href="https://senroweb.com/tr"><img style="height:15px;margin-right:5px;" src="assets/img/tr.png">Turkish</a></li>
+              <li><a style="justify-content:start;" onClick="location.href='/en'" href="https://senroweb.com/en"><img style="height:15px;margin-right:5px;" src="assets/img/us.png">English</a></li>
             </ul>
           </li>
         </div>         

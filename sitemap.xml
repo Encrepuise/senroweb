@@ -9,11 +9,11 @@
   <xhtml:link
                rel="alternate"
                hreflang="tr"
-               href="https://senroweb.com/tr.html"/>
+               href="https://senroweb.com/tr"/>
   <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://senroweb.com/en.html"/>
+               href="https://senroweb.com/en"/>
 </url>
 <url>
   <loc>https://senroweb.com/tr.html</loc>
@@ -21,7 +21,7 @@
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://senroweb.com/en.html"/>
+               href="https://senroweb.com/en"/>
 </url>
 <url>
   <loc>https://senroweb.com/en.html</loc>
@@ -29,7 +29,7 @@
     <xhtml:link
                rel="alternate"
                hreflang="tr"
-               href="https://senroweb.com/tr.html"/>
+               href="https://senroweb.com/tr"/>
 </url>
 
 
